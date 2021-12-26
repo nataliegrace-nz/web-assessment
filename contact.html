@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="language" content="EN" />
+    <meta name="index" content="noindex" />
+    <meta
+      name="keywords"
+      content="portfolio, design, photography, writing, social-media, marketing"
+    />
+    <meta
+      name="description"
+      content="a portfolio for the work of Natalie Williams"
+    />
+    <title>Natalie Williams</title>
+    <link rel="stylesheet" href="./assessts/css/main.css" />
+    <link rel="icon" href="./assessts/images/favicon.png" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body class="contact">
+    <header>
+      <nav>
+        <ul class="navigation">
+          <li class="name"><a href="./index.html">natalie williams</a></li>
+          <li><a href="./about.html">about</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </ul>
+      </nav>
+      <h1>get in touch</h1>
+    </header>
+
+    <aside class="java-list">
+      <div class="to-do">
+        <h3>to do list</h3>
+        <input id="input" type="text" placeholder="Your Items" onfocus="this.value=''"/>
+        <button id="btn" onclick="newElement ()">add</button>
+        <ul id="list"></ul>
+      </div>
+    </aside>
+
+    <section class="form">
+        <div>
+          <h3>get in touch</h3>
+          <form
+            action="mailto:someone@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            Name:<br />
+            <input type="text" name="name" /><br />
+            E-mail:<br />
+            <input type="text" name="mail" /><br />
+            Comment:<br />
+            <input id="comment" type="text" name="comment" /><br /><br />
+            <input class="box" type="submit" value="Send" />
+            <input class="box" type="reset" value="Reset" />
+          </form>
+        </div>
+    </section>
+
+    <footer>
+      <ul class="navigation">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/natalie-williams-06b2761a2"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="mailto:natw805@gmail.com"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/_nataliegrace__/?hl=en"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

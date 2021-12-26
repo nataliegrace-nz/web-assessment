@@ -1,0 +1,160 @@
+.landing-page {
+  background: linear-gradient(
+      rgba(192, 232, 248, 0.493),
+      rgba(255, 255, 255, 0.356)
+    ),
+    url(https://picsum.photos/id/114/2550/1440) 50% no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  display: grid;
+  height: 50vh;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 1fr 150px;
+  grid-template-areas:
+    "hd hd hd"
+    "sidebar main main"
+    "footer footer footer";
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 150px;
+    grid-template-areas:
+      "hd hd"
+      "sidebar main"
+      "footer footer";
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 150px;
+    grid-template-areas:
+      "hd"
+      "sidebar"
+      "main"
+      "footer";
+  }
+
+  .sidebar {
+    margin-top: 20px;
+  }
+}
+
+.about header,
+.contact header {
+  grid-area: hd;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.content {
+  grid-area: main;
+  max-width: 800px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 25px;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.container,
+.video {
+  gap: 20px;
+  padding: 20px;
+}
+
+.about footer,
+.contact footer {
+  grid-area: footer;
+  margin: 0 40px;
+}
+
+.sidebar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.form {
+  grid-area: form;
+  background-color: #9a8c98;
+  margin-top: 40px;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.java-list {
+  grid-area: list;
+  margin-top: 40px;
+  padding: 10px 0 10px 0;
+  background-color: #9a8c98;
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  display: grid;
+  height: 50vh;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr 150px;
+  grid-template-areas:
+    "hd hd"
+    "list form"
+    "footer footer";
+}
+
+@media screen and (max-width: 450px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 150px;
+    grid-template-areas:
+      "hd"
+      "list"
+      "form"
+      "footer";
+  }
+
+  .form,
+  .java-list {
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .java-list {
+    margin-top: 70px;
+  }
+}
