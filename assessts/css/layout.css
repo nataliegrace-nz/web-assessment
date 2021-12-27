@@ -154,6 +154,17 @@
 }
 
 @media screen and (max-width: 400px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 150px;
+    grid-template-areas:
+      "hd"
+      "list"
+      "form"
+      "footer";
+  }
+
   .java-list {
     margin-top: 70px;
   }
